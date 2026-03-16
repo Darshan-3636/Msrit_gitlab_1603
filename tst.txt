@@ -1,0 +1,22 @@
+A Git tag is used to mark specific, important points in a repository's history, typically to identify release points or significant milestones. Unlike branches, which move forward with new commits, a tag is a permanent, static pointer to a specific commit and does not change. 
+CircleCI
+CircleCI
+ +3
+Primary Uses of Git Tags
+Marking Software Releases: The most common use is to label specific versions of software (e.g., v1.0, v2.1.5). This allows developers to easily reference the exact codebase for any given release.
+Creating Restore Points: Tags can serve as reliable historical restore points. If a bug is found in a current version, developers can quickly check out a previous tagged version to debug or create a patch branch from that specific point.
+Version Control Automation: Tags are often integrated into Continuous Integration/Continuous Deployment (CI/CD) pipelines. Creating and pushing a new tag can automatically trigger specific workflows, such as running deployment scripts or generating release notes.
+Documentation and Reference: Tags provide a human-readable name for a specific commit hash, making it easier for team members to discuss and refer to important points in the project's history without using a raw commit ID. 
+CircleCI
+CircleCI
+ +7
+Types of Tags
+Git supports two main types of tags: 
+Git
+Git
+Lightweight Tags: These are simply a name or a pointer to a specific commit, much like a branch that doesn't move. They contain no extra information and are typically used for temporary or private object labels.
+Annotated Tags: These are stored as full objects in the Git database. They include the tagger's name, email, date, and a message, and can be signed with GPG for verification. Annotated tags are recommended for public releases due to the extra metadata they provide. 
+Git
+Git
+ +4
+In summary, tags help teams organize and manage their project's history by providing a clear, immutable reference point for important events like releases, which is crucial for effective version management and collaboration
